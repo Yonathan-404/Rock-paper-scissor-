@@ -38,23 +38,19 @@
 
         }
 
-        function playGame() {
+        function playGame(rounds) {
             let humanScore = 0;
             let computerScore = 0;
-            
-         const playerChoice = getPlayerChoice();
+
+        const playerChoice = getPlayerChoice();
         const computerChoice = getComputerChoice();
         const result = determineWinner(playerChoice, computerChoice);
 
 
 
         }
-        let humanScore = 0;
-        let computerScore = 0;
-        const playerChoice = getPlayerChoice();
-        const computerChoice = getComputerChoice();
-        const result = determineWinner(playerChoice, computerChoice);
-
+        console.log(playGame(5));
+        
         // console.log(`Player choice: ${playerChoice}`);
         // console.log(`Computer choice: ${computerChoice}`);
         // console.log(result);
