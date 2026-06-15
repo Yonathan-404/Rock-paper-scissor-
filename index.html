@@ -8,8 +8,8 @@
 </head>
 <body>
     <script>
-        let humanScore = 0;
-        let computerScore = 0;
+        humanScore = 0;
+        computerScore = 0;
         
         function getComputerChoice() {
             const choices = ["rock", "paper", "scissors"];
@@ -53,6 +53,13 @@
                 console.log(`Human Score: ${humanScore}`);      
                 console.log(`Computer Score: ${computerScore}`);
                 
+            }
+            if (humanScore > computerScore) {
+                return "You are the overall winner!";
+            } else if (computerScore > humanScore) {
+                return "Computer is the overall winner!";
+            } else {
+                return "The game is a tie!";
             }
 
 
