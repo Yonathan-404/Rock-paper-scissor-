@@ -37,18 +37,32 @@
             }
 
         }
+
+        function playGame() {
+            let humanScore = 0;
+            let computerScore = 0;
+            
+         const playerChoice = getPlayerChoice();
+        const computerChoice = getComputerChoice();
+        const result = determineWinner(playerChoice, computerChoice);
+
+
+
+        }
         let humanScore = 0;
         let computerScore = 0;
         const playerChoice = getPlayerChoice();
         const computerChoice = getComputerChoice();
         const result = determineWinner(playerChoice, computerChoice);
 
-        console.log(`Player choice: ${playerChoice}`);
-        console.log(`Computer choice: ${computerChoice}`);
-        console.log(result);
+        // console.log(`Player choice: ${playerChoice}`);
+        // console.log(`Computer choice: ${computerChoice}`);
+        // console.log(result);
 
-        console.log(`Human Score: ${humanScore}`);
-        console.log(`Computer Score: ${computerScore}`);
+        // console.log(`Human Score: ${humanScore}`);
+        // console.log(`Computer Score: ${computerScore}`);
+        
+
 
         
         
