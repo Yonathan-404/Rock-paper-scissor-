@@ -8,7 +8,8 @@
 </head>
 <body>
     <script>
-        
+        let humanScore = 0;
+        let computerScore = 0;
         
         function getComputerChoice() {
             const choices = ["rock", "paper", "scissors"];
@@ -21,7 +22,7 @@
             return choice.toLowerCase();
         }
 
-        function determineWinner(playerChoice, computerChoice) {
+        function playRound(playerChoice, computerChoice) {
             if (playerChoice === computerChoice) {
                 return "It's a tie!";
             } else if (
@@ -39,12 +40,23 @@
         }
 
         function playGame(rounds) {
-            let humanScore = 0;
-            let computerScore = 0;
+            
+            
+            for (let i = 0; i < rounds; i++) { 
+                const playerChoice = getPlayerChoice();
+                const computerChoice = getComputerChoice();
+                const result = playRound(playerChoice, computerChoice);
 
-        const playerChoice = getPlayerChoice();
-        const computerChoice = getComputerChoice();
-        const result = determineWinner(playerChoice, computerChoice);
+                console.log(`player choice: ${playerChoice}`);
+                console.log(`computer choice: ${computerChoice}`);
+                console.log(`Round ${i + 1}: ${result}`);
+                console.log(`Human Score: ${humanScore}`);      
+                console.log(`Computer Score: ${computerScore}`);
+                
+            }
+
+
+
 
 
 
